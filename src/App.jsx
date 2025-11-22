@@ -1,12 +1,15 @@
 import React from 'react'
 import NavBar from './Components/NavBar'
+import HeroSection from './Components/HeroSection'
 
 function App() {
   return (
     <div className='bg-slate-900 min-h-screen w-full'>
-       <div className="pt-28 px-4 md:px-8 lg:px-16">
- <NavBar/>
-       </div> 
+      <div className="pt-28 px-4 md:px-8 lg:px-16">
+        <NavBar />
+        <HeroSection />
+       </div>
+
     </div>
   )
 }
