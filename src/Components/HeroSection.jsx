@@ -15,10 +15,10 @@ function HeroSection() {
           </span>
           | Mern Stack Developer
         </h2>
-        <h2 className="font-['crimson'] mt-8 text-slate-200">Turning ideas into soft, functional art on the web</h2>
-        <div className='flex gap-10 mt-8'>
-          <button className='bg-sky-400 text-slate-200 rounded-xl px-2 py-1'>View Projects</button>
-          <button>Resume</button>
+        <h2 className="font-['crimson'] mt-8 text-slate-200 text-xl">Turning ideas into soft, functional art on the web</h2>
+        <div className='flex gap-8 mt-8'>
+          <button className='bg-sky-400 font-["inter"] font-extrabold text-sm text-slate-200 rounded-[20px]  w-[132px] h-[39px] hover:bg-sky-600   '>View Projects</button>
+          <button className='  text-slate-200 rounded-[20px] test-sm font-["inter"] font-extrabold w-[117px] h-[39px] border border-sky-400 hover:bg-sky-400'>Resume</button>
         </div>
         </div>
         <div className='w-[450px] h-[600px] mr-12' >
