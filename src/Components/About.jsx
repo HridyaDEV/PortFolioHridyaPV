@@ -5,7 +5,7 @@ import { MdOutlineDevices, MdOutlineWebAsset } from 'react-icons/md'
 
 const About = () => {
     return (
-        <div>
+        <div >
             <h1 className='text-sky-400 font-["crimson"] font-semibold text-[40px]'>-About Me</h1>
             <div className='flex justify-between  mt-25 '>
                 <div className='ml-10'>

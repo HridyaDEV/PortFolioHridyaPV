@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './Components/NavBar'
 import HeroSection from './Components/HeroSection'
 import About from './Components/About'
+import Journey from './Components/Journey'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <NavBar />
         <HeroSection />
         <About/>
+        <Journey/>
        </div>
 
     </div>
