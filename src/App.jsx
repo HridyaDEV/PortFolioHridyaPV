@@ -4,6 +4,7 @@ import HeroSection from './Components/HeroSection'
 import About from './Components/About'
 import Journey from './Components/Journey'
 import Skills from './Components/Skills'
+import Projects from './Components/Projects'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About/>
         <Journey/>
         <Skills/>
+        <Projects/>
        </div>
 
     </div>
