@@ -5,6 +5,7 @@ import About from './Components/About'
 import Journey from './Components/Journey'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
+import Figma from './Components/Figma'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Journey/>
         <Skills/>
         <Projects/>
+        <Figma/>
        </div>
 
     </div>

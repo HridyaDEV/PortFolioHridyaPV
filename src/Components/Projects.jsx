@@ -37,9 +37,9 @@ const projects = [
   },
     {
     title: "Portfolio",
-    img: "/Class.png",
-    desc: "Engineered a web-based platform to streamline library tasks like pre-booking, issuing, and fine tracking. Integrated with tools like phpMyAdmin and XAMPP.",
-    tech: "Java, HTML, CSS, XAMPP",
+    img: "/Portfolio.png",
+    desc: "Built a fully responsive personal portfolio website using React and Tailwind CSS to showcase my skills, projects, and experience as a web developer. Designed with a clean UI, smooth navigation, and mobile-friendly layout.",
+    tech: "React.js, Tailwind CSS",
     github: "",
     live: ""
   },
@@ -54,7 +54,7 @@ const projects = [
  
    {
     title: "Library Mangement System",
-    img: "/Class.png",
+    img: "",
     desc: "Engineered a web-based platform to streamline library tasks like pre-booking, issuing, and fine tracking. Integrated with tools like phpMyAdmin and XAMPP.",
     tech: "Java, HTML, CSS, XAMPP",
     github: "",
@@ -87,12 +87,20 @@ const Projects = () => {
             </h1>
 
             <div className="flex justify-center mt-4">
-              <img
-                src={p.img}
-                alt={p.title}
-                className="h-[146px] w-[302px] rounded-md object-cover 
-                transition-all duration-700 hover:scale-110 hover:brightness-110"
-              />
+            
+              {p.img ? (
+  <img
+    src={p.img}
+    alt={p.title}
+    className="h-[146px] w-[302px] mt-4 ml-7 rounded-[5px] object-cover"
+  />
+) : (
+  <div className="h-[146px] w-[302px] mt-4 ml-7 rounded-[5px]
+    bg-slate-800 flex justify-center items-center text-slate-400 italic">
+    No Image Available
+  </div>
+)}
+
             </div>
 
             <p className="mt-3 text-slate-200 font-['crimson'] text-[17px] leading-[22px]">
