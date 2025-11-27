@@ -21,7 +21,7 @@ function HeroSection() {
           <button className='  text-slate-200 rounded-[20px] test-sm font-["inter"] font-extrabold w-[117px] h-[39px] border border-sky-400 hover:bg-sky-400'>Resume</button>
         </div>
         </div>
-        <div className='w-[450px] h-[600px] mr-12' >
+        <div className='w-[450px] h-[600px] mr-12  transition-all duration-500 hover:scale-105' >
           <img src="/image1.png" alt="image" className=' object-fill' />
         </div>
 
