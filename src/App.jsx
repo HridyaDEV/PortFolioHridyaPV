@@ -6,6 +6,7 @@ import Journey from './Components/Journey'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Figma from './Components/Figma'
+import Contact from './Components/Contact'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Skills/>
         <Projects/>
         <Figma/>
+        <Contact/>
        </div>
 
     </div>
