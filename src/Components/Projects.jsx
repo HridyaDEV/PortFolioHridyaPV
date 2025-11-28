@@ -87,20 +87,21 @@ const Projects = () => {
             </h1>
 
             <div className="flex justify-center mt-4">
-            
+             <div className="overflow-hidden rounded-[5px]">
               {p.img ? (
   <img
     src={p.img}
     alt={p.title}
-    className="h-[146px] w-[302px] mt-4 ml-7 rounded-[5px] object-cover"
+    className="h-[146px] w-[302px] mt-4  rounded-[5px] object-cover transition-transform duration-500 hover:scale-110"
   />
 ) : (
-  <div className="h-[146px] w-[302px] mt-4 ml-7 rounded-[5px]
+  <div className="h-[146px] w-[302px] mt-4  rounded-[5px]
     bg-slate-800 flex justify-center items-center text-slate-400 italic">
     No Image Available
   </div>
 )}
 
+            </div>
             </div>
 
             <p className="mt-3 text-slate-200 font-['crimson'] text-[17px] leading-[22px]">

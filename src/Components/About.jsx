@@ -11,7 +11,7 @@ const About = () => {
                 <div className='ml-10'>
                     <img src="/image2.png" alt="image" className='w-[446px] h-[445px] rounded-[25px] border-3 border-sky-400' />
                     <div className='flex justify-center items-center h-[62px] w-[213px] border border-[#FACC15] mt-[30px] rounded-[20px] ml-20
-                     hover:bg-sky-400 hover:border-0 text-[#FACC15] hover:text-slate-200 '>
+                     hover:bg-[#FACC15] hover:border-0 text-[#FACC15] hover:text-[#252C3D] '>
                         <h1 className='font-["crimson"] font-semibold text-sm'>Download C V</h1>
                     </div>
                 </div>

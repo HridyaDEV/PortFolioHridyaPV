@@ -1,17 +1,18 @@
 import React from "react";
+import { FaSquareBehance } from "react-icons/fa6";
 import { FiExternalLink } from "react-icons/fi";
 
 const figmaProjects = [
   {
-    title: "Travel App UI",
-    desc: "A clean and minimal travel booking interface designed with modern UI patterns.",
+    title: "ToyCycle UI",
+    desc: "A clean and minimal toys reselling interface designed with modern UI patterns.",
     img: "/ToyCycle.png",
     link: "YOUR_FIGMA_LINK_1",
   },
   {
-    title: "Dashboard Design",
+    title: "Portfolio Design",
     desc: "A responsive dashboard layout focusing on clarity, typography, and spacing.",
-    img: "/dashboard-ui.png",
+    img: "/Portfolio.png",
     link: "YOUR_FIGMA_LINK_2",
   },
 ];
@@ -33,23 +34,23 @@ const Figma = () => {
           {figmaProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#252C3D] border border-[#FACC15] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition"
+              className="bg-[#252C3D] border border-t-8 border-[#FACC15] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition"
             >
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-fit transition-transform hover:scale-110 duration-500 "
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                <h3 className="text-xl font-semibold font-['crimson'] text-sky-400">{project.title}</h3>
                 <p className="text-slate-400 mt-2 text-sm">{project.desc}</p>
 
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 text-sky-400 hover:text-sky-300 transition"
+                  className="inline-flex items-center gap-2 mt-4 text-[#FACC15] hover:text-amber-400 transition"
                 >
                   View on Figma <FiExternalLink />
                 </a>
@@ -64,12 +65,12 @@ const Figma = () => {
             href="YOUR_BEHANCE_LINK"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#252C3D] bg-[#FACC15] w-[200px] h-[50px] rounded-[25px] font-['crimson']
+            className="text-[#FACC15] border border-[#FACC15] hover:bg-[#FACC15] w-[200px] h-[50px] rounded-[25px] font-['crimson']
             flex justify-center items-center gap-2 transition-all duration-300
-            hover:bg-[#252C3D] hover:text-[#FACC15] hover:scale-105 text-lg"
+            hover:text-[#252C3D] hover:scale-105 text-lg"
           >
-            View More on Behance
-            {/* <FiExternalLink className="w-5 h-5" /> */}
+            View More on
+            <FaSquareBehance className="w-5 h-5" />
           </a>
         </div>
 
